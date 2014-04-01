@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0050)http://www.admintasia.com/admintasia_v1/index.php# -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+	<title>Admintasia | Powerful backend admin user interface</title>
+	<link href="http://www.admintasia.com/admintasia_v1/style.css" rel="stylesheet" media="all">
+	<link href="http://www.admintasia.com/admintasia_v1/css/styles/default/ui.css" rel="stylesheet" title="style" media="all">
+	<script type="text/javascript" src="jquery-1.3.2.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="superfish.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.7.2.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+	<script type="text/javascript" src="tablesorter.js"></script>
+	<script type="text/javascript" src="tablesorter-pager.js"></script>
+	<script type="text/javascript" src="cookie.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+	<!--[if IE 6]>
+	<link href="css/ie6.css" rel="stylesheet" media="all" />
+	
+	<script src="js/pngfix.js"></script>
+	<script>
+	  /* EXAMPLE */
+	  DD_belatedPNG.fix('.logo, .other ul#dashboard-buttons li a');
+
+	</script>
+	<![endif]-->
+	<!--[if IE 7]>
+	<link href="css/ie7.css" rel="stylesheet" media="all" />
+	<![endif]-->
+<script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/menu_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="menu_injection_builder.js"><meta name="string_finder.js"><meta name="change_sink.js"></head>
+<body>
+	<div id="header">
+		<div id="top-menu">
+			<a href="index.htm" title="My account">My account</a> |
+			<a href="index.htm" title="Settings">Settings</a> |
+			<a href="index.htm" title="Contact us">Contact us</a>
+			
+			<span>Logged in as <a href="index.htm" title="Logged in as admin">admin</a></span>
+			| <a href="index.htm" title="Edit profile">Edit profile</a>
+			| <a href="index.htm" title="Logout">Logout</a>
+		</div>
+		<div id="sitename">
+			<a href="http://www.admintasia.com/admintasia_v1/index.php" class="logo float-left" title="Admintasia">Admintasia</a>
+			<div class="button float-right">
+				<a href="index.htm" id="dialog_link" class="btn ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Open Dialog</a>
+				<a href="index.htm" id="login_dialog" class="btn ui-state-default ui-corner-all"><span class="ui-icon ui-icon-image"></span>Open Login Box</a>
+			</div>
+			
+			
+		</div>
+		<ul id="navigation" class="sf-navbar sf-js-enabled">
+			<li class="">
+				<a href="http://www.admintasia.com/admintasia_v1/index.php" class="sf-with-ul">Dashboard<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+				<ul style="display: none; visibility: hidden; ">
+					<li><a href="http://www.admintasia.com/admintasia_v1/index.php">Administration</a></li>
+					<li><a href="http://www.admintasia.com/admintasia_v1/forms.php">Forms</a></li>
+					<li><a href="http://www.admintasia.com/admintasia_v1/tables.php">Tables</a></li>
+					<li><a href="http://www.admintasia.com/admintasia_v1/msg.php">Response Messages</a></li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="index.htm" class="sf-with-ul">Dummy menu<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+				<ul style="display: none; visibility: hidden; ">
+					<li class="">
+						<a href="index.htm" class="sf-with-ul">Menu item 1<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+						<ul style="display: none; visibility: hidden; ">
+							<li><a href="index.htm">Subitem 1</a></li>
+							<li><a href="index.htm">Subitem 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.htm">Menu item 2</a>
+					</li>
+					<li>
+						<a href="index.htm">Menu item 3</a>
+					</li>
+					<li class="">
+						<a href="index.htm" class="sf-with-ul">Menu item 4<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+						<ul style="display: none; visibility: hidden; ">
+							<li><a href="index.htm">Subitem 1</a></li>
+							<li class="">
+								<a href="index.htm" class="sf-with-ul">Subitem 2<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+								<ul style="display: none; visibility: hidden; ">
+									<li><a href="index.htm">Subitem 1</a></li>
+									<li class="">
+										<a href="index.htm" class="sf-with-ul">Subitem 2<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+										<ul style="display: none; visibility: hidden; ">
+											<li><a href="index.htm">Subitem 1</a></li>
+											<li>
+												<a href="index.htm">Subitem 2</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="index.htm" class="sf-with-ul">Menu item 5<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+						<ul style="display: none; visibility: hidden; ">
+							<li><a href="index.htm">Subitem 1</a></li>
+							<li><a href="index.htm">Subitem 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="index.htm">Menu item 6</a>
+					</li>
+					<li>
+						<a href="index.htm">Menu item 7</a>
+					</li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="index.htm" class="sf-with-ul">Layout Options<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+				<ul style="display: none; visibility: hidden; ">
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/three-columns-layout.php">Three columns</a>
+					</li>
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/two-column-layout.php">Two columns</a>
+					</li>
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/three-column-small-layout.php">One big, two small</a>
+					</li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="index.htm" class="sf-with-ul">Available components<span class="ui-icon-carat-1-s ui-icon"> »</span></a>
+				<ul style="display: none; visibility: hidden; ">
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/accordion.php">Accordion</a>
+					</li>
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/tabs.php">Tabs</a>
+					</li>
+					<li>
+						<a href="http://www.admintasia.com/admintasia_v1/overlays.php">Overlays</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>	
+
+	<div id="page-wrapper">
+		<div id="main-wrapper">
+			<div id="main-content">
+				<div class="other-box yellow-box ui-corner-all">
+					<div class="cont tooltip ui-corner-all">
+						<h3>Welcome !</h3>
+						<p><b>Admintasia</b> is a <b>complete</b>, fully and easily customisable <b>backend administration user interface</b>. Please proceed to the actual demo by clicking the <b>Ok</b> button below. Enjoy !</p>
+
+					</div>
+				</div>
+				<div class="page-title ui-widget-content ui-corner-all">
+					<h1>Viewing: <b>Dashboard</b></h1>
+					<div class="other">
+						<div class="float-left">You can put some text/buttons here or just remove this div.</div>
+						<div class="button float-right">
+
+							<a href="index.htm" class="btn ui-state-default"><span class="ui-icon ui-icon-circle-plus"></span>Example</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="page-title ui-widget-content ui-corner-all">
+					<h1>Administration Options</h1>
+					<div class="other">
+
+						<ul id="dashboard-buttons">
+							<li>
+								<a href="index.htm" class="Book_phones tooltip">
+									Book phones
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Books tooltip">
+									Books
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Box_recycle tooltip">
+									Box recycle
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Books tooltip">
+									Books
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Box_content tooltip">
+									Box content
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Briefcase_files tooltip">
+									Briefcase files
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Chart_4 tooltip">
+									Chart
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Clipboard_3 tooltip">
+									Clipboard
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Chart_5 tooltip">
+									Chart
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Glass tooltip">
+									Glass
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Globe tooltip">
+									Globe
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Mail_compose tooltip">
+									Mail compose
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Mail_open tooltip">
+									Mail open
+								</a>
+							</li>
+							<li>
+								<a href="index.htm" class="Monitor tooltip">
+									Monitor
+								</a>
+
+							</li>
+							<li>
+								<a href="index.htm" class="Star tooltip">
+									Star
+								</a>
+								<div class="clearfix"></div>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+					</div>
+					
+
+				</div>
+				<div class="title title-spacing">
+					<h2>Dashboard grid example</h2>
+					You can put whatever you like in these containers. I've mode some examples using accordions, buttons, news, tabs and forms. For more grid examples, visit <a href="index.htm" title="More layout examples">this page</a>.
+				</div>
+				<div class="three-column">
+					<div class="column ui-sortable" unselectable="on">
+						<div class="portlet form-bg ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+
+							<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Form Example 2</div>
+							<div class="portlet-content">
+								<form action="index.htm" method="post" enctype="multipart/form-data" class="forms" name="form">
+									<ul>
+										<li>
+											<label class="desc">
+												Email:
+											</label>
+											<div>
+
+												<input type="text" tabindex="1" maxlength="255" value="" class="field text full" name="">
+												<span class="red">Error message example ...</span>
+											</div>
+										</li>
+										<li>
+											<label class="desc">
+												Password:
+											</label>
+											<div>
+
+												<input type="password" tabindex="1" maxlength="255" value="" class="field text full" name="">
+												<label>These inputs have class="full", which means that they have 100% width.</label>
+											</div>
+										</li>
+										<li class="buttons">
+											<button type="submit" value="Submit" class="ui-state-default ui-corner-all" id="saveForm">Login</button>
+										</li>
+									</ul>
+
+								</form>
+								<div class="linetop clearfix"></div>
+								<p>Added class="form-bg" to obtain the light gray background.</p>
+							</div>
+						</div>
+						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+							<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Something else ...</div>
+							<div class="portlet-content">
+
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								
+								<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+								
+								<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								
+								<p> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex </p>
+							</div>
+
+						</div>
+					</div>
+					
+					<div class="column ui-sortable" unselectable="on">
+						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+							<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Tabs, messages and tables</div>
+							<div class="portlet-content">
+								<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+									<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+										<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="http://www.admintasia.com/admintasia_v1/index.php#tabs-1">First</a></li>
+										<li class="ui-state-default ui-corner-top"><a href="http://www.admintasia.com/admintasia_v1/index.php#tabs-2">Second</a></li>
+										<li class="ui-state-default ui-corner-top"><a href="http://www.admintasia.com/admintasia_v1/index.php#tabs-3">Third</a></li>
+									</ul>
+									<div id="tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+									<div id="tabs-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+
+									<div id="tabs-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+								</div>
+								<div class="other-box gray-box float-left width50 ui-corner-all">
+									<div class="cont ui-corner-all">
+										<h3>Grey Box</h3>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+
+								</div>
+								<div class="other-box yellow-box float-right width50 ui-corner-all">
+									<div class="cont ui-corner-all">
+										<h3>Notice Box</h3>
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+
+								<i class="note">* Table example below: </i>
+								<div class="hastable">
+									<table cellspacing="0">
+										<thead>
+											<tr>
+												<td><input type="checkbox" class="checkbox" value=""></td>
+												<td>Name</td>
+												<td>Email</td>
+
+												<td>Options</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>  	  	
+												<td>
+													<input type="checkbox" class="checkbox" value="">
+												</td>
+												<td>
+
+													John 
+												</td>
+												<td>
+													Lorem .
+												</td>
+												<td>
+													Options
+												</td>
+											</tr>
+											<tr class="alt">  	  	
+												<td>
+
+													<input type="checkbox" class="checkbox" value="">
+												</td>
+												<td>
+													John 
+												</td>
+												<td>
+													Lorem .
+												</td>
+												<td>
+													Options
+												</td>
+
+											</tr>
+											<tr>  	  	
+												<td>
+													<input type="checkbox" class="checkbox" value="">
+												</td>
+												<td>
+													John 
+												</td>
+												<td>
+													Lorem .
+												</td>
+
+												<td>
+													Options
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="column ui-sortable" unselectable="on">
+						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+							<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Buttons</div>
+							<div class="portlet-content">
+								<p>Admintasia contains a total of more than 180 icons. I only added a few for demonstration. In the theme package you will find a page that contains all buttons you have at your disposal (buttons.html)</p>
+								<ul id="icons" class="ui-widget ui-helper-clearfix">
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-star"><span class="ui-icon ui-icon-star"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-link"><span class="ui-icon ui-icon-link"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-cancel"><span class="ui-icon ui-icon-cancel"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-plus"><span class="ui-icon ui-icon-plus"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-plusthick"><span class="ui-icon ui-icon-plusthick"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-minus"><span class="ui-icon ui-icon-minus"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-minusthick"><span class="ui-icon ui-icon-minusthick"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-close"><span class="ui-icon ui-icon-close"></span></li>
+
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-script"><span class="ui-icon ui-icon-script"></span></li>
+									<li class="ui-state-default ui-corner-all" title=".ui-icon-alert"><span class="ui-icon ui-icon-alert"></span></li>
+
+								</ul>
+								<div class="clearfix"></div>
+								<p>You can transform those icons into links.See the examples below.</p>
+								
+								<div class="clearfix"></div>
+									<a href="index.htm" class="btn ui-state-default ui-corner-all">
+										<span class="ui-icon ui-icon-grip-dotted-horizontal"></span>
+										Button 1
+									</a>
+									<a href="index.htm" class="btn ui-state-default ui-corner-all">
+
+										<span class="ui-icon ui-icon ui-icon-gripsmall-diagonal-se"></span>
+										Button 2
+									</a>
+									<a href="index.htm" class="btn ui-state-default ui-corner-all">
+										<span class="ui-icon ui-icon-grip-solid-horizontal"></span>
+										Button 3
+									</a>
+									<a href="index.htm" class="btn ui-state-default ui-corner-all">
+										<span class="ui-icon ui-icon-grip-solid-vertical"></span>
+										Button 3
+									</a>
+
+								<div class="clearfix"></div>
+								<p class="title-spacing linetop">Here is a pagination example:</p>
+								<ul class="pagination">
+									<li class="previous-off">«Previous</li>
+									<li class="active">1</li>
+									<li><a href="index.htm">2</a></li>
+									<li><a href="index.htm">3</a></li>
+
+									<li><a href="index.htm">4</a></li>
+									<li><a href="index.htm">5</a></li>
+									<li><a href="index.htm">6</a></li>
+									<li><a href="index.htm">7</a></li>
+									<li><a href="index.htm">8</a></li>
+									<li><a href="index.htm">9</a></li>
+
+									<li><a href="index.htm">10</a></li>
+									<li class="next"><a href="index.htm">Next »</a></li>
+								</ul>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+							<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Notification Messages</div>
+							<div class="portlet-content">
+								<p>Admintasia contains a total of more than 180 icons. I only added a few for demonstration. In the theme package you will find a page that contains all buttons you have at your disposal (buttons.html)</p>
+								<div class="title">
+									<h3>Response messages</h3>
+									Below you will find <b>Admintasia</b> response messages.
+								</div>
+								<div class="response-msg error ui-corner-all">
+									<span>Error message</span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+								</div>
+								<div class="response-msg notice ui-corner-all">
+									<span>Notice message</span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+								</div>
+							
+								<div class="response-msg inf ui-corner-all">
+									<span>Information message</span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+								</div>
+							
+								<div class="response-msg success ui-corner-all">
+									<span>Success message</span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div id="sidebar">
+			<div class="side-col ui-sortable">
+				<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+					<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Theme Switcher</div>
+					<div class="portlet-content">
+						<ul class="side-menu">
+							<li>
+								<a class="set_theme" id="default" href="javascript:void(0);" style="font-weight:bold;" title="Default Theme">Default Theme</a>
+							</li>
+							<li>
+								<a class="set_theme" id="light_blue" href="javascript:void(0);" title="Light Blue Theme">Light Blue Theme</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+					<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Layout Options</div>
+					<div class="portlet-content">
+						<ul class="side-menu">
+							<li>
+								Here, you can set the page width, either fixed or fluid. You decide!<br><br>
+							</li>
+							<li id="fluid_layout">
+								<a href="javascript:void(0);" title="Fluid Layout">Switch to <b>Fluid Layout</b></a>
+							</li>
+							<li id="fixed_layout">
+								<a href="javascript:void(0);" title="Fixed Layout">Switch to <b>Fixed Layout</b></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+					<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Navigation Menu</div>
+					<div class="portlet-content">
+						<div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+							<div>
+								<h3 class="ui-accordion-header ui-helper-reset ui-state-active ui-corner-top" role="tab" aria-expanded="true" tabindex="0"><span class="ui-icon ui-icon-triangle-1-s"></span><a href="index.htm">Dashboard</a></h3>
+								<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="height: 93px; " role="tabpanel">
+									<ul class="side-menu">
+										<li><a href="http://www.admintasia.com/admintasia_v1/index.php" title="Administration">Administration</a></li>
+										<li><a href="http://www.admintasia.com/admintasia_v1/forms.php" title="Forms">Forms Example</a></li>
+										<li><a href="http://www.admintasia.com/admintasia_v1/tables.php" title="Tables">Tables example</a></li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" tabindex="-1"><span class="ui-icon ui-icon-triangle-1-e"></span><a href="index.htm">Dummy drop down</a></h3>
+								<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="height: 93px; display: none; " role="tabpanel">
+									<ul class="side-menu">
+										<li><a href="http://www.admintasia.com/admintasia_v1/index.php" title="Administration">Administration</a></li>
+										<li><a href="http://www.admintasia.com/admintasia_v1/forms.php" title="Forms">Forms Example</a></li>
+										<li><a href="http://www.admintasia.com/admintasia_v1/tables.php" title="Tables">Tables example</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="other-box yellow-box ui-corner-all">
+					<div class="cont tooltip ui-corner-all">
+						<h3>Tooltip !</h3>
+						<p>This is a sample tooltip !</p>
+					</div>
+				</div>
+				<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+					<div class="portlet-header ui-widget-header"><span class="ui-icon ui-icon-circle-arrow-s"></span>Accordion</div>
+					<div class="portlet-content">
+						<div id="datepicker" class="hasDatepicker"><div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style=""><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" onclick="DP_jQuery.datepicker._adjustDate(&#39;#datepicker&#39;, -1, &#39;M&#39;);" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" onclick="DP_jQuery.datepicker._adjustDate(&#39;#datepicker&#39;, +1, &#39;M&#39;);" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">August</span> <span class="ui-datepicker-year">2012</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">1</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">2</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">3</a></td><td class=" ui-datepicker-week-end ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default ui-state-highlight ui-state-active" href="index.htm">4</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">5</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">6</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">7</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">8</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">9</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">10</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">11</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">12</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">13</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">14</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">15</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">16</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">17</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">18</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">19</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">20</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">21</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">22</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">23</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">24</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">25</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">26</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">27</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">28</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">29</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">30</a></td><td class=" " onclick="DP_jQuery.datepicker._selectDay(&#39;#datepicker&#39;,7,2012, this);return false;"><a class="ui-state-default" href="index.htm">31</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div id="footer">
+		<div id="menu">
+			<a href="index.htm" title="Home">Home</a>
+			<a href="index.htm" title="Administration">Administration</a>
+			<a href="index.htm" title="Settings">Settings</a>
+			<a href="index.htm" title="Contact">Contact</a>
+		</div>
+		Copyright © 2009 - Horia Simon (WebDesignChimera.com)
+	</div>
+
+<div style="display: none; position: absolute; overflow: hidden; z-index: 1000; outline: 0px; " class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialog"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-dialog" unselectable="on">Dialog Title</span><a href="index.htm" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="dialog" style="" class="ui-dialog-content ui-widget-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><button type="button" class="ui-state-default ui-corner-all">Ok</button><button type="button" class="ui-state-default ui-corner-all">Cancel</button></div></div><div style="display: none; position: absolute; overflow: hidden; z-index: 1000; outline: 0px; " class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-login"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-login" unselectable="on">Members Login</span><a href="index.htm" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="login" style="" class="ui-dialog-content ui-widget-content">
+				<form action="index.htm" method="post" enctype="multipart/form-data" class="forms" name="form">
+					<ul>
+						<li>
+							<label for="email" class="desc">
+								Email:
+							</label>
+							<div>
+								<input type="text" tabindex="1" maxlength="255" value="" class="field text full" name="email" id="email">
+							</div>
+						</li>
+						<li>
+							<label for="password" class="desc">
+								Password:
+							</label>
+							<div>
+								<input type="text" tabindex="1" maxlength="255" value="" class="field text full" name="password" id="password">
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><button type="button" class="ui-state-default ui-corner-all">Login</button><button type="button" class="ui-state-default ui-corner-all">Close</button></div></div><div style="display: none; position: absolute; overflow: hidden; z-index: 1002; outline: 0px; height: auto; width: 470px; top: 213.5px; left: 436px; " class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-welcome"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-welcome" unselectable="on">Welcome to Admintasia</span><a href="index.htm" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="welcome" style="height: 78px; min-height: 48px; width: auto; " class="ui-dialog-content ui-widget-content">
+		<p><b>Admintasia</b> is a <b>lightweight</b>, fully and easily customisable <b>administration user interface</b>. Please proceed to the actual demo by clicking the button below. Enjoy !</p>
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><button type="button" class="ui-state-default ui-corner-all">View Admintasia V1.0</button></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div><div id="tooltip" style="display: none; top: 489px; left: 856px; right: auto; " class=""><h3 style="">Chart 4</h3><div class="body" style="display: none; "></div><div class="url" style="display: none; "></div></div></body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1"></span><object id="skype_plugin_object" location.href="http://www.admintasia.com/admintasia_v1/index.php" location.hostname="www.admintasia.com" style="position: absolute; visibility: hidden; left: -100px; top: -100px; " width="0" height="0" type="application/x-vnd.skype.click2call.chrome.5.7.0"></object></html>
